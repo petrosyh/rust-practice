@@ -16,7 +16,7 @@ pub fn run(input_path: String) {
     }
     let mut output:Vec<voronoi::line::Line> = Vec::new();
     
-    voronoi::bruteforce::run(&input, &mut output);
+    voronoi::fortune::run(&input, &mut output);
 
     println!("xbeg ybeg xend yend is_finite");
     for line in output {
